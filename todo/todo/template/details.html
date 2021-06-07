@@ -1,0 +1,150 @@
+{% extends 'base.html' %}
+{% block content %}
+
+ <div class="shadow card">
+                <div class="card-body">
+                    <h5 class="card-title">{{tak.name}}</h5>
+                    <p><b>{{tak.priority}}</b></p>
+                    <p>{{tak.date}}</p>
+                    <a class="btn btn-danger" href="{% url 'delete' i.id %}">Done</a>
+                    <a class="btn btn-success" href="{% url 'update' i.id %}">Update</a>
+                </div>
+           </div>
+ {% endblock %}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+{% extends 'base.html' %}
+{% block content %}
+
+
+
+
+
+
+
+
+<div class="shadow card">
+                <div class="card-body">
+                    <h5 class="card-title">{{tak.name}}</h5>
+                    <p><b>{{tak.priority}}</b></p>
+                    <p>{{tak.date}}</p>
+                    <a class="btn btn-danger" href="{% url 'delete' tak.id %}">Done</a>
+                    <a class="btn btn-success" href="{% url 'update' tak.id %}">Update</a>
+                </div>
+           </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+{% endblock %}
