@@ -36,7 +36,7 @@ def update(request,id):
 
 def delete (request,id):
     if request.method=='POST':
-        movi=movie.objects.get(id)
+        movi=movie.objects.get(id=id)
         movi.delete()
         return redirect('/')
     return render(request,'delete.html')
