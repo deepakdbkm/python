@@ -1,0 +1,20 @@
+{% extends 'base.html' %}
+{% block body %}
+<!--<div class="abc" style="text-align:center;">-->
+<!--<div class="container">-->
+<div class="row">
+    <div class="col-md-4"></div>
+        <div class="col-md-4">
+<form method ="POST" enctype="multipart/form-data">
+    {% csrf_token %}
+    <input type="text" name="name" placeholder=" Add movie name"><br>
+    <input type="text" name="desc" placeholder=" Add  description"><br>
+    <input type="number" name="year" placeholder=" Year" ><br>
+    <input type="file" name="img" ><br>
+    &nbsp; &nbsp; &nbsp;<input type="submit">
+</form>
+
+    </div>
+</div>
+<!--</div>-->
+{% endblock %}
