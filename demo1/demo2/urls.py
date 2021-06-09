@@ -2,7 +2,7 @@ from . import views
 from django.urls import path
 from demo1 import settings
 from django.conf.urls.static import static
-
+app_name='demo2'
 urlpatterns = [
 
 

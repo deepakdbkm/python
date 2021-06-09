@@ -17,6 +17,20 @@
     <title>LOGIN</title>
 </head>
 <body bgcolor="green">
+<div class="container-fluid">
+    <div class="row">
+    <div class="col-md-2">
+
+    </div>
+
+        <div class="col-md-8">
+            </div>
+            <div class="col-md-2">
+
+          <a class="btn btn-success" href="{% url 'demo2:reg'  %}">Register</a>
+        </div>
+    </div>
+</div>
 {% for msg in messages %}
 <h2>{{msg}}</h2>
 {% endfor %}
@@ -26,7 +40,7 @@
 <div class="col" >
     <h2>LOGIN</h2>
     <div class="col-lg-4" >
-        <form action="login"method="POST">
+        <form action=""method="POST">
              {% csrf_token %}
     <input type="text" name="username" placeholder= "type ur username"><br>
     <input type="password" name="password" placeholder="type ur password"><br>

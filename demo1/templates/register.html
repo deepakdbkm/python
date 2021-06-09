@@ -5,27 +5,31 @@
         .new{
               text-align:center;
                width:1000px;
-               background-color:red;
+
              }
     </style>
     <meta charset="UTF-8">
     <title>REGISTRATION</title>
 </head>
-<body bgcolor="white";>
+<body style="background-color:red">
 <div class="new">
-
+    <div class="row">
+        <div class="col-md-12 colsm-12 col-lg12">
+             <a class="btn btn-success" href="{% url 'demo1app:demo'  %}">Home</a>
 <form action="register"method="POST">
     {% csrf_token %}
     <h1><b><i>Registration</i></b></h1>
-    <input type="text" name="username" placeholder= "type ur username"><br>
-    <input type="text" name="firstname" placeholder="type ur firstname"><br>
-    <input type="text" name="lastname" placeholder="type ur lastname"><br>
-    <input type="email" name="email" placeholder="type ur mailid"><br>
-    <input type="password" name="password" placeholder="type ur password"><br>
+    <input type="text" name="username" placeholder= "Type your username"><br>
+    <input type="text" name="firstname" placeholder="Type your firstname"><br>
+    <input type="text" name="lastname" placeholder="Type your lastname"><br>
+    <input type="email" name="email" placeholder="Type your mailid"><br>
+    <input type="password" name="password" placeholder="Type your password"><br>
     <input type="password" name="cpassword" placeholder="Confirm password"><br>
     <input type="submit"><br>
 </form>
     </div>
+    </div>
+</div>
 {% for msg in messages %}
 <h2>{{msg}}</h2>
 {% endfor %}
